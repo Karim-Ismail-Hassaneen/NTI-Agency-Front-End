@@ -1,0 +1,43 @@
+.section-one {
+    min-height: 50vh;
+}
+
+.section-one .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section-one .content .card {
+    background-color: #3a2a6e;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 1s ease;
+}
+
+.section-one .content .card .icon {
+    color: var(--main-color);
+    font-size: 8em;
+    text-align: center;
+}
+
+.section-one .content .card h2 {
+    color: #fefcff;
+    text-align: center;
+}
+
+.section-one .content .card p {
+    color: #b4b2b5;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.section-one .content .card:hover {
+    transform: scale(1.1);
+}
+
+  

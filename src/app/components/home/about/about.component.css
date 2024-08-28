@@ -1,0 +1,9 @@
+.subheading {
+    text-transform: none;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.border {
+    border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="font-size: 18px;
+font-weight: 400; background-color: #212529; color: #fff;">
+  <div class="container">
+    @for (headerItems of Header; track $index) {
+      <a class="navbar-brand" href="#">{{headerItems.logo}}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto text-uppercase py-4 py-lg-0">
+              <li class="nav-item"><a class="nav-link" routerLink="/Home" routerLinkActive="active">{{headerItems.navbar1}}</a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="/About" routerLinkActive="active">{{headerItems.navbar2}}</a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="/Service" routerLinkActive="active">{{headerItems.navbar3}}</a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="/Portfolio" routerLinkActive="active">{{headerItems.navbar4}}</a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="/Contact" routerLinkActive="active">{{headerItems.navbar5}}</a></li>
+              <li class="nav-item"><a class="nav-link" routerLink="/Dashboard" routerLinkActive="active">{{headerItems.dashboard}}</a></li>
+          </ul>
+          <!-- <button class="btn btn-warning ml-4 px-4">Login</button> -->
+      </div>
+    }
+  </div>
+</nav>

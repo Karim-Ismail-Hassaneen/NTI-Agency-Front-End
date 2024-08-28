@@ -1,0 +1,7 @@
+<header *ngFor="let HeroItems of HeroSectionData; let i = index" class="masthead"
+[ngStyle]="{ 'background-image': 'url(' + 'http://localhost:9000/images/' + HeroItems.image + ')' }">
+    <div class="container">
+        <div class="masthead-subheading">{{ HeroItems.title }}</div>
+        <div class="masthead-heading text-uppercase">{{ HeroItems.subTitle }}</div>
+    </div>
+</header>

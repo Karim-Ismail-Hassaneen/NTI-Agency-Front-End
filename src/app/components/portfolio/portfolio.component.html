@@ -1,0 +1,35 @@
+<section class="page-section">
+    <div class="container">
+      @for (item of Portfolio; track $index) {
+      <div class="text-center">
+        <h2 class="subheading section-heading text-uppercase">{{ item.pageTitle }}</h2>
+        <h3 class="section-subheading text-muted subheading">{{ item.pageSubTitle }}</h3>
+      </div>
+      }
+      <div class="row text-center d-flex justify-content-center">
+        <div class="col-md-3" *ngFor="let item of Portfolio">
+          <div
+            class="fa-stack fa-4x"
+            style="position: relative; width: 100px; height: 100px; margin: auto"
+          >
+            <div
+              [ngStyle]="{
+                'background-image':
+                  'url(' + 'http://localhost:9000/images/' + item.image + ')',
+                'background-size': 'contain',
+                'background-position': 'center',
+                'background-repeat': 'no-repeat',
+                position: 'absolute',
+                top: '0',
+                left: '0',
+                right: '0',
+                bottom: '0'
+              }"
+            ></div>
+          </div>
+          <h4 class="my-3">{{ item.title }}</h4>
+          <p class="text-muted">{{ item.desc }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
